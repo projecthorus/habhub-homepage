@@ -12,7 +12,7 @@
     <meta charset="utf-8"/>
     <title>habhub</title>
     <meta name="description" content="The home of high altitude ballooning tools run by UKHAS"/>
-    <meta name="author" content="Priyesh Patel"/>
+    <meta name="author" content="Priyesh Patel / Mark Jessop"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -43,9 +43,9 @@
         <div class="container">
             <div class="ten columns offset-by-three">
                 <p class="remove-bottom" id="excerpt">
-                    habhub is the home of high altitude ballooning tools from
-                    UKHAS. habitat, the CouchDB-based tracking system, as well
-                    as several other tools are based here.
+                    habhub is the home of high altitude ballooning tools developed by
+                    UKHAS, and the SondeHub team. </br>
+                    The habitat database was retired in 2022, replaced by the SondeHub database and tracker.
                 </p>
             </div>
         </div>
@@ -55,18 +55,73 @@
         <h3>Tools</h3>
         <div class="sixteen columns">
             <p class="one-third column alpha">
-                <a href="http://habitat.habhub.org/" class="link">
-                    <span class="link-title">habitat</span>
+                <a href="http://amateur.sondehub.org/" class="link">
+                    <span class="link-title">sondehub-amateur</span>
                     <span class="link-desc">
-                        CouchDB based tracking system
+                        Tracker for amateur high-altitude balloon launches
                     </span>
                 </a>
             </p> 
             <p class="one-third column alpha">
-                <a href="http://tracker.habhub.org/" class="link">
-                    <span class="link-title">tracker</span>
+                <a href="http://tracker.sondehub.org/" class="link">
+                    <span class="link-title">sondehub</span>
                     <span class="link-desc">
-                        HAB tracker
+                        Tracker for meteorological radiosondes
+                    </span>
+                </a>
+            </p> 
+            <p class="one-third column alpha">
+                <a href="http://predict.sondehub.org/" class="link">
+                    <span class="link-title">predictor</span>
+                    <span class="link-desc">
+                        Landing predictor written by CUSF
+                    </span>
+                </a>
+            </p> 
+        </div>
+        <div class="sixteen columns">
+            <p class="one-third column alpha">
+                <a href="http://sondehub.org/calc/" class="link">
+                    <span class="link-title">burst calculator</span>
+                    <span class="link-desc">
+                        Balloon burst calculator written by CUSF
+                    </span>
+                </a>
+            </p> 
+            <p class="one-third column alpha">
+                <a href="http://ssdv.habhub.org/" class="link">
+                    <span class="link-title">ssdv</span>
+                    <span class="link-desc">
+                        Live SSDV imagery from HAB payloads
+                    </span>
+                </a>
+            </p> 
+            <p class="one-third column alpha">
+                <a href="https://grafana.v2.sondehub.org/d/VeLSoQqnz/flights?orgId=1" class="link">
+                    <span class="link-title">grafana</span>
+                    <span class="link-desc">
+                        Grafana Dashboards for amateur HAB launches
+                    </span>
+                </a>
+            </p> 
+        </div>
+
+        <h3>Guides & Documentation</h3>
+        <div class="sixteen columns">
+            <p class="one-third column alpha">
+                <a href="https://github.com/projecthorus/sondehub-amateur-tracker/wiki/Receiving-High-Altitude-Balloon-Telemetry" class="link">
+                    <span class="link-title">reception guide</span>
+                    <span class="link-desc">
+                        How to receive telemetry from amateur high-altitude
+                        balloon launches
+                    </span>
+                </a>
+            </p> 
+            <p class="one-third column alpha">
+                <a href="https://github.com/projecthorus/sondehub-amateur-tracker/wiki/Getting-your-Flight-on-the-Sondehub-Amateur-Tracker" class="link">
+                    <span class="link-title">launchers guide</span>
+                    <span class="link-desc">
+                        How to get your balloon launch on the sondehub-amateur tracker
                     </span>
                 </a>
             </p> 
@@ -81,45 +136,10 @@
         </div>
         <div class="sixteen columns">
             <p class="one-third column alpha">
-                <a href="http://predict.habhub.org/" class="link">
-                    <span class="link-title">predictor</span>
+                <a href="https://github.com/projecthorus/sondehub-amateur-tracker/wiki/Guide-for-HabHub-Users" class="link">
+                    <span class="link-title">habitat retirement</span>
                     <span class="link-desc">
-                        Landing predictor written by CUSF
-                    </span>
-                </a>
-            </p> 
-            <p class="one-third column alpha">
-                <a href="http://habhub.org/calc/" class="link">
-                    <span class="link-title">burst calculator</span>
-                    <span class="link-desc">
-                        Balloon burst calculator written by CUSF
-                    </span>
-                </a>
-            </p> 
-            <p class="one-third column alpha">
-                <a href="http://ukhas.org.uk/projects:dl-fldigi" class="link">
-                    <span class="link-title">dl-fldigi</span>
-                    <span class="link-desc">
-                        An adapted version of fldigi for HAB tracking
-                    </span>
-                </a>
-            </p> 
-        </div>
-        <div class="sixteen columns">
-            <p class="one-third column alpha">
-                <a href="http://ukhas.org.uk/general:chase_car_trackers" class="link">
-                    <span class="link-title">chase car apps</span>
-                    <span class="link-desc">
-                        Mobile applications to broadcast your chase car
-                        location to habitat
-                    </span>
-                </a>
-            </p> 
-            <p class="one-third column alpha">
-                <a href="http://ssdv.habhub.org/" class="link">
-                    <span class="link-title">ssdv</span>
-                    <span class="link-desc">
-                        Live SSDV imagery from HAB payloads
+                        Information on the retirement of the habitat database and the habhub tracker
                     </span>
                 </a>
             </p> 
@@ -161,64 +181,22 @@
                     </span>
                 </a>
             </p> 
+        </div>
+        <h3>Servers & Infrastructure</h3>
+        <div class="sixteen columns">
             <p class="one-third column alpha">
-                <a href="/zeusbot/" class="link">
-                    <span class="link-title">IRC Logs</span>
+                <a href="https://github.com/projecthorus/sondehub-infra/wiki" class="link">
+                    <span class="link-title">sondehub-infra</span>
                     <span class="link-desc">
-                        Zeusbot logs from #highaltitude
+                        SondeHub's infrastructure-as-code
                     </span>
                 </a>
             </p> 
-        </div>
-        <h3>Servers</h3>
-        <div class="sixteen columns">
             <p class="one-third column alpha">
-                <a href="http://ceto.habhub.org/" class="link">
+                <a href="http://habhub.org/" class="link disabled">
                     <span class="link-title">ceto</span>
                     <span class="link-desc">
-                        ceto.habhub.org<br />
-                        Kindly donated by Anthony Stirk.
-                    </span>
-                </a>
-            </p> 
-            <p class="one-third column alpha">
-                <a href="http://phorcys.habhub.org/" class="link">
-                    <span class="link-title">phorcys</span>
-                    <span class="link-desc"> 
-                        phorcys.habhub.org<br />
-                        Kindly donated by Anthony Stirk.
-                    </span>
-                </a>
-            </p> 
-        </div>
-        <div class="sixteen columns">
-            <p class="one-third column alpha">
-                <a href="http://tiamat.habhub.org/" class="link disabled">
-                    <span class="link-title">tiamat</span>
-                    <span class="link-desc">
-                        tiamat.habhub.org<br />
-                        Kindly donated by Anthony Stirk.<br />
-                        tiamat was retired in July 2015.
-                    </span>
-                </a>
-            </p> 
-            <p class="one-third column alpha">
-                <a href="http://kraken.habhub.org/" class="link disabled">
-                    <span class="link-title">kraken</span>
-                    <span class="link-desc">
-                        kraken.habhub.org<br />
-                        Kindly donated by Anthony Stirk.<br />
-                        kraken was retired in July 2015.
-                    </span>
-                </a>
-            </p> 
-            <p class="one-third column alpha">
-                <a href="#" class="link disabled">
-                    <span class="link-title">nessie</span>
-                    <span class="link-desc">
-                        nessie.habhub.org<br />
-                        Kindly donated by Anthony Stirk.<br />
-                        nessie was retired in September 2011.
+                        Kindly donated by Anthony Stirk. ceto was retired in 2022, along with the habitat database.
                     </span>
                 </a>
             </p> 
